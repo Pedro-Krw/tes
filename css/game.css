@@ -1,0 +1,73 @@
+body {
+  background-image: url(../img/hutan.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1,
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: arial;
+}
+
+button {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 40px;
+}
+
+.container {
+  margin: 0px auto;
+  cursor: url(../img/palu1.png), auto;
+}
+
+.container:active {
+  cursor: url(../img/palu2.png), auto;
+}
+
+.tanah {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.tanah::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 100px;
+  background: url(../img/Tanah.png) bottom center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  bottom: -25px;
+  margin: 0px auto;
+}
+
+.tikus {
+  width: 100%;
+  height: 100%;
+  background: url(../img/sa.png) bottom center no-repeat;
+  background-size: 60%;
+  position: absolute;
+  top: 100px;
+  transition: top 0.3s;
+  margin: 0px auto;
+}
+
+.tanah.muncul .tikus {
+  top: -15px;
+  margin: 0px auto;
+}
+.card {
+  border-color: green;
+}
+/* body {
+    background-image: url(../img/hutan.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  } */
